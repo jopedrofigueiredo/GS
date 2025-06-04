@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/contato.css">
+</head>
+<body>
+    <header>
+        <div class="cabecalho">
+        <h1 class="nome_empresa">AQUASENSE</h1>
+            <nav class="cabecalho_menu">
+                <a class="cabecalho_menu_link" href="../index.html">Home</a>
+                <a class="cabecalho_menu_link" href="">Equipe</a>
+                <a class="cabecalho_menu_link" href="">FAQ</a>
+                <a class="cabecalho_menu_link" href="">Quiz</a>
+                <a class="cabecalho_menu_link" href="pages/contato.html">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="secao_contato">
+            <div class="secao_contato_texto">
+                <h2 class="titulo_contato">Entre em contato</h2>
+                <p class="paragrafo_contato">Afim de melhorar-mos a experiência do usuário final, 
+                    envie-nos uma sugestão, para juntos, resolvermos esse problema que afeta muitos.</p>
+            </div>
+            <form class="formulario" method="post"> 
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="nome">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="mensagem">Envie sua sugestão</label>
+                <textarea name="mensagem" id="mensagem" rows="10"></textarea>
+
+                <button class="botao_cadastro" type="submit">Enviar</button>
+            </form>
+        </section> 
+
+    </main>
+    <footer>
+        <p class="rodape">
+            &copy; 2025 Sistema de Monitoramento de Águas em Tempo Real
+        </p>
+    </footer>
+</body>
+</html>
