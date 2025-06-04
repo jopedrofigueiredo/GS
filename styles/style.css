@@ -1,3 +1,11 @@
+:root {
+    --cor-primaria: #0b3d91;
+    --cor-secundaria: #2c5364;
+    --cor-terciaria: #0f2027;
+    --cor-branco: #fff;
+    --cor-preto: #111;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +14,7 @@
 .cabecalho {
     display: flex;
     justify-content: space-around;
-    background-color: #0b3d91;
+    background-color: var(--cor-primaria);
     text-align: center;
     padding: 15px 0;
 
@@ -35,5 +43,5 @@
 
 .rodape {
     text-align: center;
-    background-color: #0b3d91;
+    background-color: var(--cor-primaria);
 }
