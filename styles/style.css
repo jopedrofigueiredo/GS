@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0b3d91;
+    text-align: center;
+    padding: 15px 0;
+
+}
+
+.nome_empresa {
+    font-size: 30px;
+}
+
+.cabecalho_menu {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    font-size: 20px;
+
+}
+
+.cabecalho_menu_link {
+    gap: 50px;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    flex-wrap: nowrap;
+    color: #fff;
+}
+
