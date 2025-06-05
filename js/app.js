@@ -23,3 +23,20 @@ function mostrarSlide(n) {
     
     slides[nmr_slide].style.display = "block";
 }
+
+
+
+// Quiz
+alterarStatusBotao() {
+  let botao = document.getElementById('btn-recomecar');
+  if (botao.classList.contains('btn_quiz-desabilitado')) {
+    botao.classList.remove('btn_quiz-desabilitado');
+    botao.classList.add('btn_quiz');
+  } else {
+    botao.classList.remove('btn_quiz');
+    botao.classList.add('btn_quiz-desabilitado');
+  }
+}
+
+
+alterarStatusBotao();
