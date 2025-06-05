@@ -9,6 +9,7 @@
     --cor-fundo-texto: #EFF5FF;
     --cor-branco: #fff;
     --cor-preto: #111;
+    --cor-cinza: #808080;
     --font-primaria: 'montserrat';
     --font-secundaria: 'poppins';
     --font-terciaria: 'lora';
@@ -204,6 +205,98 @@ a {
 .proximo {
   right: 10px;
 }
+
+
+
+/* Quiz */
+.secao_quiz {
+    background-color: var(--cor-terciaria);
+    border-radius: 12px;
+    color: var(--cor-branco);
+    padding: 10%;
+    margin-bottom: 150px;
+}
+
+.secao_quiz h2 {
+    text-align: center;
+    /* padding: 0% 10% 3% 10%; */
+    padding-bottom: 3%;
+    font-family: var(--font-primaria);
+    font-size: 28px;
+}
+
+.quiz_conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quiz_conteudo h4 {
+    font-size: 14px;
+    text-align: center;
+    color: var(--cor-cinza);
+    font-family: var(--font-terciaria);
+}
+
+.pergunta_quiz {
+    font-size: 20px;
+    font-family: var(--font-secundaria);
+    text-align: center;
+    padding: 5% 10% 2% 10%
+}
+
+.alternativas_quiz {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 8%;
+}
+
+.opcao_quiz {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-branco);
+    font-size: 14x;
+    border-radius: 8px;
+    border: 3px solid var(--cor-cinza);
+    font-family: var(--font-terciaria);
+    padding: 1.5%;
+}
+.opcao_quiz:hover,
+.opcao_quiz:focus {
+    background-color: lightgray; 
+    transform: scale(1.05);
+    color: var(--cor-preto);
+}
+
+.btn_quiz {
+    font-size: 18px;
+    font-family: var(--font-secundaria);
+    font-weight: 600;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branco);
+    padding: 2%;
+    border-radius: 12px;
+    margin: 20px 0 0 0;
+    cursor: pointer;
+    width: fit-content;
+}
+.btn_quiz:hover {
+    transform: scale(1.1);
+}
+
+.btn_quiz-desabilitado {
+    font-size: 18px;
+    font-family: var(--font-secundaria);
+    font-weight: 600;
+    background-color: #6f6f70;
+    color: var(--cor-branco);
+    padding: 2%;
+    border-radius: 12px;
+    margin: 20px 0 0 0;
+    cursor: not-allowed;
+    width: fit-content;
+}
+
 
 
 
