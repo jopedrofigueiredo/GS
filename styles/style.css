@@ -158,6 +158,16 @@ a {
   position: relative;
   max-width: 400px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.texto_slideshow {
+    text-align: center;
+    font-family: var(--font-secundaria);
+    color: var(--cor-primaria);
+    font-size: 28px;
 }
 
 .img_slideshow {
@@ -170,11 +180,15 @@ a {
   border-radius: 10px;
 }
 
+.visual_slideshow {
+    position: relative;
+}
+
 .anterior, .proximo {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  color: white;
+  color: var(--cor-branco);
   border: none;
   padding: 10px;
   font-size: 18px;
