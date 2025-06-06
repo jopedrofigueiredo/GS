@@ -27,7 +27,7 @@ function mostrarSlide(n) {
 
 
 // Quiz
-alterarStatusBotao() {
+ function alterarStatusBotao() {
   let botao = document.getElementById('btn-recomecar');
   if (botao.classList.contains('btn_quiz-desabilitado')) {
     botao.classList.remove('btn_quiz-desabilitado');
@@ -39,4 +39,3 @@ alterarStatusBotao() {
 }
 
 
-alterarStatusBotao();
