@@ -27,7 +27,7 @@ function mostrarSlide(n) {
 
 
 // Quiz
- function alterarStatusBotao() {
+function alterarStatusBotao() {
   let botao = document.getElementById('btn-recomecar');
   if (botao.classList.contains('btn_quiz-desabilitado')) {
     botao.classList.remove('btn_quiz-desabilitado');
@@ -38,4 +38,8 @@ function mostrarSlide(n) {
   }
 }
 
+let respostasCorretas = {'1C': true,'2C': true,'3B': true,'4A': true,'5B': true, '6B': true,'7C': true, '8A': true, '9C': true, '10D': true};
+
+let perguntaAtual = 1;
+let acertos = 0;
 
