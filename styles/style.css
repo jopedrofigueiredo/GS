@@ -215,6 +215,9 @@ a {
     color: var(--cor-branco);
     padding: 10%;
     margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .secao_quiz h2 {
@@ -229,6 +232,10 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+}
+.quiz_conteudo-oculto {
+    display: none;
 }
 
 .quiz_conteudo h4 {
@@ -242,14 +249,14 @@ a {
     font-size: 20px;
     font-family: var(--font-secundaria);
     text-align: center;
-    padding: 5% 10% 2% 10%
+    padding: 5% 10% 2% 10%;
 }
 
 .alternativas_quiz {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 0 8%;
+    width: 75%;
 }
 
 .opcao_quiz {
@@ -300,7 +307,6 @@ a {
     border-radius: 12px;
     margin: 20px 0 0 0;
     cursor: pointer;
-    width: fit-content;
 }
 .btn_quiz:hover {
     transform: scale(1.1);
@@ -342,18 +348,17 @@ a {
 }
 
 .titulo_contato {
-    font-size: 36px;
+    font-size: 34px;
     color: var(--cor-secundaria);
     text-align: center;
     font-family: var(--font-primaria);
     margin-top: 40px;
-    
 }
 
 .paragrafo_contato {
     text-align:center;
     padding: 0 80px;
-    font-size: 28px;
+    font-size: 20px;
     padding-bottom: 50px;
     font-family: var(--font-terciaria);
 }
@@ -364,7 +369,7 @@ a {
 }
 
 .formulario label {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     font-family: var(--font-secundaria);
 
