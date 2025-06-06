@@ -322,6 +322,86 @@ a {
 
 
 
+/* contato */
+.secao_contato {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 0 0;
+    border: 3px solid var(--cor-cinza);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: none;
+    padding: 0 5%;
+    background-color: lightgray;
+}
+
+.secao_contato_texto {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.titulo_contato {
+    font-size: 36px;
+    color: var(--cor-secundaria);
+    text-align: center;
+    font-family: var(--font-primaria);
+    margin-top: 40px;
+    
+}
+
+.paragrafo_contato {
+    text-align:center;
+    padding: 0 80px;
+    font-size: 28px;
+    padding-bottom: 50px;
+    font-family: var(--font-terciaria);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--font-secundaria);
+
+}
+
+.formulario input,
+.formulario textarea {
+    margin-bottom: 30px;
+    padding: 12px;
+    border: 2px solid var(--cor-preto);
+    border-radius: 8px;
+    font-size: 16px;
+}
+.formulario input:focus,
+.formulario textarea:focus {
+    background-color: var(--cor-fundo-texto);
+}
+.formulario div {
+    display: flex;
+    justify-content: center;
+
+}
+
+.botao_cadastro {
+    margin: 20px 0;
+    width: fit-content;
+    padding: 20px 60px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branco);
+    border-radius: 8px;
+    font-size: 20px;
+}
+.botao_cadastro:hover {
+    background-color: var(--cor-quarternaria);
+}
+
+
 
 /* main */
 /* footer */
