@@ -29,6 +29,41 @@ a {
 }
 
 /* header */
+@media (max-width: 768px) {
+  .cabecalho {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 10px;
+  }
+
+  .nome_empresa {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .cabecalho_menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .cabecalho_menu_link {
+    font-size: 18px;
+  }
+
+  .navegacao {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navegacao_opcao {
+    font-size: 16px;
+    padding: 5px;
+  }
+}
+
 .cabecalho {
     display: flex;
     justify-content: space-around;
