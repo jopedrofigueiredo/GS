@@ -90,6 +90,46 @@ a {
 
 
 /* principal */
+@media (max-width: 768px) {
+    .secao {
+        flex-direction: column !important;
+        padding: 5% 5%;
+        text-align: center;
+    }
+
+    .texto_secao {
+        order: 1;
+        width: 100%;
+    }
+
+    .titulo_secao {
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+
+    .paragrafo_secao {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .imagem_secao {
+        order: 2;
+        width: 100%;
+        justify-content: center;
+        padding: 15px 0;
+    }
+
+    .imagem_secao_detalhes {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .paragrafos_multiplos_secao {
+        gap: 8px;
+    }
+}
+
 .secao {
     margin: 64px 0;
     display: flex;
