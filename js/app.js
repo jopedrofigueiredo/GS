@@ -127,3 +127,39 @@ function mostrarResultadoFinal() {
     document.getElementById('btn-verificar').style.display = 'none';
     alterarStatusBotao();
 }
+
+
+function recomecar() { //função para recomeçar o quiz (zera resultado, volta para a primeira pergunta, volta as classes padrões das tags)
+    numeroPergunta = 1;
+    totalAcertos = 0;
+
+    for (let i = 1; i <= 10; i++) {
+      let pergunta = document.getElementById('?' + i);
+      if (i === 1) {
+        pergunta.classList.remove('quiz_conteudo-oculto');
+        pergunta.classList.add('quiz_conteudo');
+      } else {
+        pergunta.classList.remove('quiz_conteudo');
+        pergunta.classList.add('quiz_conteudo-oculto');
+      }
+
+      let botoes = pergunta.querySelectorAll('button');
+      for (let x = 0; x < botoes.length; x++) {
+        let botao = botoes[x];
+        botao.removeAttribute('data-selecionado');
+        botao.classList.remove('opcao_quiz-correto');
+        botao.classList.remove('opcao_quiz-errado');
+        }
+      }
+
+    let resultado = document.querySelector('.quiz_qtd_acertos');
+    if (resultado) {
+        resultado.classList.remove('quiz_qtd_acertos');
+        resultado.classList.add('quiz_qtd_acertos-desabilitado');
+        resultado.innerText = "Acertou: X de 10 questões!";
+    }
+
+    document.getElementById('btn-verificar').style.display = 'inline-block';
+    alterarStatusBotao();
+}
+
